@@ -7,13 +7,13 @@ import Landing from "./_components/landerpage";
 
 export default function Home() {
   return (
-    <div className="w-full flex   flex-col">
+    <div className="w-full flex  h-full flex-col">
       {/** LANDING PAGE */}
-   <div className="w-full flex">
+   <div className="w-full flex h-full">
     <Landing/>
      </div>
-     <section className="w-full h-dvh"> 
-      hdh
+     <section className="w-full h-full"> 
+      another page
      </section>
     </div>
   );
