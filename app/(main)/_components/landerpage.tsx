@@ -114,26 +114,26 @@ const Landing = () => {
 
                 {/** foot text */}
                 <div className="  flex flex-col justify-center  space-y-2 font-bold  left-12 absolute bottom-10">
-                <h1 className=" text-xs lines "> Cool, Crisp. Classic </h1>
-                <h1 className={`${gravitas.className} text-xl text-yellow-300 lines`}> Sip the Spirity <br/> of Summer </h1>
+                <h1 className=" text-xs lines  md:text-lg  "> Cool, Crisp. Classic </h1>
+                <h1 className={`${gravitas.className} md:text-xl text-yellow-300 lines`}> Sip the Spirity <br/> of Summer </h1>
 
                 
                 </div>
 
                 <div className=" flex justify-center absolute bottom-10 right-0  font-bold text-xl px-3 flex-col">
-                <h1 className={` text-sm  lines z-25`}>  Every cocktail on our menu is a <br/> blend of premium ingredients, <br/> creativw flair, and timeless recipes <br/> -designed to delight your senses </h1>
+                <h1 className={` text-sm  lines z-25  md:text-lg `}>  Every cocktail on our menu is a <br/> blend of premium ingredients, <br/> creativw flair, and timeless recipes <br/> -designed to delight your senses </h1>
 
 </div>
 
 
 <div className=" absolute  top-[140%] px-10 justify-between flex w-full">
-<div className=" pt-7 flex split flex-col justify-center  space-y-2 font-bold  left-12">
-                <h1 className=" text-xs  "> Most popular cocktailsc </h1>
-                <span className={`${gravitas.className} split w-full space-y-8 text-yellow-300 lines`}> 
+<div className=" pt-7 flex split flex-col justify-center  md:text-lg   space-y-2 font-bold  left-12">
+                <h1 className=" text-sm   md:text-lg "> Most popular cocktailsc </h1>
+                <span className={`${gravitas.className}  md:text-lg  split w-full space-y-8 text-sm text-yellow-300 lines`}> 
                     {addition.map((doct, keys)=>(
                         <div key={keys} className="flex flex-col gap-2 ">
-                                <span className=" flex gap-2 split">{doct.label} <span className="text-white justify-end items-end text-end"> -  {doct.amount}</span> </span>
-                                <h1 className="text-white text-sm split">{doct.url}</h1>
+                                <span className=" flex gap-2 split  md:text-lg ">{doct.label} <span className="text-white text-sm justify-end items-end text-end"> -  {doct.amount}</span> </span>
+                                <h1 className="text-white  split md:text-lg text-sm">{doct.url}</h1>
 
                         </div>
                     ))}
@@ -141,13 +141,13 @@ const Landing = () => {
                 
                 </div>
 
-                <div className=" pt-7 flex flex-col  space-y-2 font-bold  justify-end">
-                <h1 className=" text-xs lines "> Most popular cocktailsc </h1>
-                <span className={`${gravitas.className}  w-full space-y-8 text-yellow-300 lines`}> 
+                <div className=" pt-7 flex flex-col  space-y-2 font-bold  justify-end text-sm ">
+                <h1 className=" text- lines  md:text-lg  "> Most popular cocktailsc </h1>
+                <span className={`${gravitas.className} text-sm w-full space-y-8 text-yellow-300 lines`}> 
                     {documents.map((doct, keys)=>(
                         <div key={keys} className="flex flex-col gap-2 ">
-                                <span className=" flex gap-2">{doct.label} <span className="text-white justify-end items-end text-end"> -  {doct.amount}</span> </span>
-                                <h1 className="text-white text-sm">{doct.url}</h1>
+                                <span className=" text-sm flex gap-2  md:text-lg ">{doct.label} <span className="text-white justify-end items-end text-end text-sm"> -  {doct.amount}</span> </span>
+                                <h1 className="text-white text-sm  md:text-lg ">{doct.url}</h1>
 
                         </div>
                     ))}

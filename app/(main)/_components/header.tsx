@@ -6,6 +6,7 @@ import { headMater } from ".";
 import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
+import { Sheeti } from "./side";
 
 
 const gravitas = Gravitas_One({
@@ -19,7 +20,7 @@ const HeaderTips = () => {
         window.location.href=url
     }
     return ( 
-        <div className="sticky z-9999 w-full h-22  items-center flex px-10 justify-between pt-3">
+        <div className="sticky z-9999 flex w-full h-22  items-center  px-10 justify-between pt-3">
             <div  className="w-full flex gap-1 items-center cursor-pointer h-full">
               <Link onClick={()=>clicking("/")} href={"/"} className="w-full gap-2 flex items-center">
               <Image src="/images/logo.png" alt="logo" width={35} height={25}/>
@@ -27,8 +28,12 @@ const HeaderTips = () => {
                 
               </Link>  
             </div>
+            <div className=" flex text-white lg:hidden cursor-pointer">
+            <Sheeti/>
+
+            </div>
                             {/** heading components  */}
-<div className="flex gap-4 w-full justify-end">
+<div className=" hidden lg:flex gap-4 w-full justify-end">
         {
             headMater.map((doc, keys)=>{
 
